@@ -1,0 +1,271 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F3F5Fc;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    
+}
+.col-1{width: calc(((100%/12)*1));}
+.col-2{width: calc(((100%/12)*2));}
+.col-3{width: calc(((100%/12)*3));}
+.col-4{width: calc(((100%/12)*4));}
+.col-5{width: calc(((100%/12)*5));}
+.col-6{width: calc(((100%/12)*6));}
+.col-7{width: calc(((100%/12)*7));}
+.col-8{width: calc(((100%/12)*8));}
+.col-9{width: calc(((100%/12)*9));}
+.col-10{width: calc(((100%/12)*10));}
+.col-11{width: calc(((100%/12)*11));}
+.col-12{width: calc(((100%/12)*12));}
+
+
+
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+[class*='col-']{
+    float: left;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.encriptar{
+ height:100vh ;
+ padding: 40px;
+}
+.encriptar .logo{
+    width: 120px;
+    height: 48px;
+    text-align: center;
+}
+.encriptar .logo img{
+    width: 32px;
+    height: 48px;
+}
+.main{
+    height: calc(100vh - 168px);
+    margin:80px 0 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.encriptar .texto{
+    width: 100%;
+   
+}
+.encriptar .texto textarea{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5Fc;
+    outline-style: none;
+    border: none;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    
+}
+.encriptar .position{
+    align-self: flex-end;
+    width:100%;
+}
+.encriptar .restriccion{
+    display: flex;
+    margin: 16px 0;
+    gap: 8px;
+    color: rgba(73, 80, 87, 1);
+}
+.encriptar .restriccion p{
+ font-size: 12px;
+ overflow: scroll;
+ overflow-x: hidden;
+}
+
+button{
+    width:100%;
+    height: 67px;
+    margin-bottom: 72px;
+    border-radius: 24px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    border: 1px solid #0A3871;
+    background-color: #ffffff;
+
+}
+.btn-encriptar{
+    background-color: #0A3871;
+    color: #ffffff;
+    margin-left: -12px;
+ }
+ button:hover{
+    scale: 1.04;
+    transition: 0.5s;
+    cursor: pointer;
+ }
+ button:active{
+    opacity: 0.95;
+ }
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    margin-left: 12px;
+ }
+
+.desencriptar{
+    height:100vh ;
+    padding: 40px;
+}
+.container-desencriptar{
+    background-color: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.anuncio-desencriptar .imagen{
+margin:32px;
+}
+.imagen img{
+    max-width: 100%;
+    height: auto;
+}
+.anuncio-desencriptar .anuncio-texto{
+    margin: 32px;
+    text-align: center;
+
+}
+.anuncio-texto .mensaje1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.anuncio-texto .mensaje2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+.texto-desencriptar{
+    width:100%;
+    height:100%;
+    padding: 32px;
+    
+}
+.texto-desencriptar p{
+    width: 100%;
+    height:calc(100% - 102px);
+    margin-bottom: 32px;
+    text-align: center;
+    
+    
+}
+.texto-desencriptar{
+    display: none;
+}
+
+.btn-copiar{
+    width: 100%;
+} 
+
+
+@media only screen and (max-width:768px){
+    
+    .encriptar{
+        width: 100%;
+        height: 80vh;
+    }
+    .encriptar .logo{
+        width: 0;
+    }
+   .main{
+    margin: 50px 0;
+    height: calc(100% - 50px);
+   }
+   .desencriptar{
+    width: 100%;
+    height:20vh;
+    padding-top: 0;
+   }
+   .anuncio-desencriptar .imagen{
+    display: none;
+   }
+   .container-desencriptar{
+        width: 100%;
+        height: calc(20vh - 40px);  
+   }
+   
+   .anuncio-desencriptar{
+    margin: 0 auto;
+   }
+
+  
+    
+}
+@media only screen and (max-width:375px){
+  
+   
+    .encriptar{
+        width: 100%;
+        height: 70vh;
+        padding: 24px 16px 24px 16px;
+    }
+    .position{
+        margin-bottom: 24px;
+    }
+  
+   .main{
+    margin: 50px 0;
+    height: calc(100% - 50px);
+   }
+   .encriptar .texto textarea{
+    height: 30vh;
+   }
+   
+   .btn-encriptar{
+    margin: 0 0 24px 0;
+   }
+   .btn-desencriptar{
+    margin: 0 0 24px 0;
+   }
+   .position .row .col-6{
+    width: 100%;
+   }
+   .desencriptar{
+    width: 100%;
+    height:30vh;
+    padding:40px 24px;
+   }
+  
+   .container-desencriptar{
+    height: calc(30vh - 80px);  
+}
+   .anuncio-desencriptar{
+    margin-bottom: 24px;
+   }
+   .anuncio-texto{
+    margin:0;
+   }
+  
+        
+    
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 encriptar">
+                <header class="row logo">
+                    <img src="./images/logoA.png" alt="">
+                </header>
+                <div class="row main">
+                    <div class="texto" >
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+                    </div>
+                    
+                    <div class="position">
+                        <div class="restriccion">
+                            <img src="./images/admiracion.png" width="16" height="16" alt="">
+                            <p>Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="row ">
+                            <div class="col-6">
+                                <button class="btn-encriptar">Encriptar</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn-desencriptar">Desencriptar</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+                    
+                    
+                
+
+            </div>
+            <div class="col-4 desencriptar">
+                <div class="row container-desencriptar" id="ok">
+                    <div class="anuncio-desencriptar">
+                        <div class="imagen">
+                        <img src="./images/Muñeco.png" alt="">
+                        </div>
+                        <div class="anuncio-texto">
+                            <p class="mensaje1">Ningun mensaje fue encontrado</p>
+                            <p class="mensaje2">Ingrese el texto que desee encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                   <div class="texto-desencriptar">
+                        <p>texto</p>
+                        <div >
+                            <button class="btn-copiar">Copiar</button>
+                        </div>
+                   </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -62,6 +62,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 .encriptar .texto{
     width: 100%;
@@ -85,6 +86,7 @@ body{
     align-self: flex-end;
     width:100%;
 }
+
 .encriptar .restriccion{
     display: flex;
     margin: 16px 0;
@@ -94,8 +96,6 @@ body{
 }
 .encriptar .restriccion p{
  font-size: 12px;
- overflow: scroll;
- overflow-x: hidden;
 }
 
 button{
@@ -108,12 +108,13 @@ button{
     border: none;
     border: 1px solid #0A3871;
     background-color: #ffffff;
+   
 
 }
 .btn-encriptar{
     background-color: #0A3871;
     color: #ffffff;
-    margin-left: -12px;
+    width: 99%;
  }
  button:hover{
     scale: 1.04;
@@ -126,9 +127,32 @@ button{
 .btn-desencriptar{
     background-color: #D8DFE8;
     color: #0A3871;
-    margin-left: 12px;
+    width: 99%;
+    margin-left: 4px;
  }
-
+ .footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    
+}
+.footer p{
+    font-weight: bold;
+    color: #0A3871;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    
+}
+.footer a{
+    font-size: 20px;
+    color:#0A3871 ;
+    padding: 0 10px;
+}
 .desencriptar{
     height:100vh ;
     padding: 40px;
@@ -192,29 +216,7 @@ margin:32px;
 .btn-copiar{
     width: 100%;
 } 
-.footer{
-    width: 1440px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    bottom: 15px;
-    padding: 0;
-    align-items: center;
-}
-.footer p{
-    font-weight: bold;
-    color: #0A3871;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 16px;
-    
-}
-.footer a{
-    font-size: 20px;
-    color:#0A3871 ;
-    padding: 0 10px;
-}
+
 
 
 @media only screen and (max-width:768px){
@@ -245,6 +247,9 @@ margin:32px;
    
    .anuncio-desencriptar{
     margin: 0 auto;
+   }
+   .footer{
+    display: none;
    }
 
   
@@ -292,7 +297,9 @@ margin:32px;
    .anuncio-texto{
     margin:0;
    }
-  
+  .footer{
+    display: none;
+  }
         
     
 }
